@@ -1,20 +1,7 @@
 (function () {
   "use strict";
 
-  if (!Array.from) {
-    Array.from = function (object) {
-      return [].slice.call(object);
-    }
-  }
-
-  function buildAttribute(object, propName, value) {
-    if (value == undefined) {
-      return object;
-    }
-    object = (object == null) ? {} : object;
-    object[propName] = value;
-    return object;
-  }
+ 
 
   function buildDraggable(Sortable) {
     function removeNode(node) {
