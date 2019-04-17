@@ -1,10 +1,6 @@
 (function () {
   "use strict";
- if (!Array.from) {
-    Array.from = function (object) {
-      return [].slice.call(object);
-    }
-  }
+
 
   function buildAttribute(object, propName, value) {
     if (value == undefined) {
